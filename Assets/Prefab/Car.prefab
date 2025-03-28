@@ -121,10 +121,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 816a41838f1281b4d92468d7a832f33b, type: 2}
   - {fileID: 11400000, guid: 6348ee6dc470c0548a674a5d75c71266, type: 2}
   - {fileID: 11400000, guid: b610c3b209e35e845a73d3f78d7eb6be, type: 2}
+  - {fileID: 11400000, guid: 38c42d2d6783aa349abcab4717ea00f8, type: 2}
   _currentItem: {fileID: 0}
   _itemImage: {fileID: 0}
   _numberOfItemUse: 0
   carControler: {fileID: 5925999151666373769}
+  ItemInput: 0
 --- !u!65 &8835320703553888426
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -218,6 +220,8 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   _Car: {fileID: 7446626289335737527}
+  AxisName: 
+  AccelInput: 0
 --- !u!114 &6247121001477057051
 MonoBehaviour:
   m_ObjectHideFlags: 0

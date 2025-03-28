@@ -21,7 +21,8 @@ public class CarControler : MonoBehaviour
     private AnimationCurve _accelerationCurve;
 
     [SerializeField] private GameObject _Car;
-
+    public string AxisName;
+    public KeyCode AccelInput;
 
     public void Turbo()
     {
@@ -54,13 +55,13 @@ public class CarControler : MonoBehaviour
     {
 
 
-        _rotationInput = Input.GetAxis("Horizontal");
+        _rotationInput = Input.GetAxis(AxisName);
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(AccelInput))
         {
             _isAccelerating = true;
         }
-        if (Input.GetKeyUp(KeyCode.Space))
+        if (Input.GetKeyUp(AccelInput))
         {
             _isAccelerating = false;
         }

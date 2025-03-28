@@ -17,11 +17,12 @@ public class PlayerItemManager : MonoBehaviour
     private int _numberOfItemUse;
 
     public CarControler carControler;
+    public KeyCode ItemInput;
 
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.X))
+        if(Input.GetKeyDown(ItemInput))
         {
             UseItem();
         }
