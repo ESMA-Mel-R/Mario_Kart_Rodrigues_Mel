@@ -20,6 +20,7 @@ public class CarControler : MonoBehaviour
     [SerializeField]
     private AnimationCurve _accelerationCurve;
 
+    [SerializeField] private GameObject _Car;
 
 
     public void Turbo()
@@ -123,7 +124,11 @@ public class CarControler : MonoBehaviour
 
         if (_isGiant)
         {
-
+            _Car.transform.localScale = new Vector3(2,2,2);
+        }
+        else
+        {
+            _Car.transform.localScale = new Vector3(0.86742f, 0.86742f, 0.86742f);
         }
     }
 }

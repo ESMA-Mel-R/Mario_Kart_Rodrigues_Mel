@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "ItemLaunchable", menuName = "Scriptable Objects/ItemLaunchable")]
+[CreateAssetMenu(fileName = "ItemGigaShroom", menuName = "Scriptable Objects/ItemSize")]
 
 public class ItemGigaShroom : Item
 {

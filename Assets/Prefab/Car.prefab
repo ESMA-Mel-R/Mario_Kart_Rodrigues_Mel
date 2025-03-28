@@ -120,6 +120,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e480412ac2b81b942bbd1c98e17957cd, type: 2}
   - {fileID: 11400000, guid: 816a41838f1281b4d92468d7a832f33b, type: 2}
   - {fileID: 11400000, guid: 6348ee6dc470c0548a674a5d75c71266, type: 2}
+  - {fileID: 11400000, guid: b610c3b209e35e845a73d3f78d7eb6be, type: 2}
   _currentItem: {fileID: 0}
   _itemImage: {fileID: 0}
   _numberOfItemUse: 0
@@ -216,6 +217,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  _Car: {fileID: 7446626289335737527}
 --- !u!114 &6247121001477057051
 MonoBehaviour:
   m_ObjectHideFlags: 0
