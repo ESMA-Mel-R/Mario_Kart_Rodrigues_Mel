@@ -14,7 +14,7 @@ public class CarControler : MonoBehaviour
     private float _speed, _accelerationLerpInterpolator, _rotationInput; 
     [SerializeField]
     private float _speedMaxBasic = 10, _speedMaxTurbo = 20, _accelerationFactor, _rotationSpeed = 50;
-    private bool _isAccelerating, _isTurbo;
+    private bool _isAccelerating, _isTurbo, _isGiant;
     private float _terrainSpeedVariator;
 
     [SerializeField]
@@ -36,6 +36,19 @@ public class CarControler : MonoBehaviour
         yield return new WaitForSeconds(3);
         _isTurbo = false;
     }
+
+    public void Giant()
+    {
+        StartCoroutine(Giantroutine());
+    }
+
+    private IEnumerator Giantroutine()
+    {
+        _isGiant = true;
+        yield return new WaitForSeconds(8);
+        _isGiant = false;
+    }
+
     void Update()
     {
 
@@ -107,5 +120,10 @@ public class CarControler : MonoBehaviour
 
         transform.eulerAngles += Vector3.up * _rotationSpeed * Time.deltaTime*_rotationInput;
         _rb.MovePosition(transform.position+transform.forward*_speed*Time.fixedDeltaTime);
+
+        if (_isGiant)
+        {
+
+        }
     }
 }
