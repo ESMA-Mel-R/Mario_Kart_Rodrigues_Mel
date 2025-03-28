@@ -1,13 +1,21 @@
 using System.Collections;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class RaceTurnNumerator : MonoBehaviour
 {
+    [SerializeField] private Text _LapNumber;
+    [SerializeField] private Image _Finish;
+    [SerializeField] private BoxCollider _BoxCollider;
+
     private int _number;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         _number = 0;
+        _Finish = gameObject.GetComponent<Image>();
+        _BoxCollider = GetComponent<BoxCollider>();
     }
 
     // Update is called once per frame
@@ -15,7 +23,7 @@ public class RaceTurnNumerator : MonoBehaviour
     {
         if ( _number == 4)
         {
-
+            
         }
     }
 
