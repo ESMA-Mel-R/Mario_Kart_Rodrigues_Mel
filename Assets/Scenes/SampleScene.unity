@@ -952,17 +952,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 640693a3babcaad4ea1cccd46d4edfc1, type: 3}
---- !u!114 &1260661398 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5925999151666373769, guid: 61cbf0f27e5bba242be193aba70a15f2, type: 3}
-  m_PrefabInstance: {fileID: 7616645106069036822}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a416026c9449e8c4c92e409d1eab43e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1434233116
 GameObject:
   m_ObjectHideFlags: 0
@@ -1856,26 +1845,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6901756946154424659, guid: 61cbf0f27e5bba242be193aba70a15f2, type: 3}
-      propertyPath: carControler
-      value: 
-      objectReference: {fileID: 1260661398}
-    - target: {fileID: 6901756946154424659, guid: 61cbf0f27e5bba242be193aba70a15f2, type: 3}
-      propertyPath: _itemList.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6901756946154424659, guid: 61cbf0f27e5bba242be193aba70a15f2, type: 3}
-      propertyPath: '_itemList.Array.data[0]'
-      value: 
-      objectReference: {fileID: 11400000, guid: e480412ac2b81b942bbd1c98e17957cd, type: 2}
-    - target: {fileID: 6901756946154424659, guid: 61cbf0f27e5bba242be193aba70a15f2, type: 3}
-      propertyPath: '_itemList.Array.data[1]'
-      value: 
-      objectReference: {fileID: 11400000, guid: 816a41838f1281b4d92468d7a832f33b, type: 2}
-    - target: {fileID: 6901756946154424659, guid: 61cbf0f27e5bba242be193aba70a15f2, type: 3}
-      propertyPath: '_itemList.Array.data[2]'
-      value: 
-      objectReference: {fileID: 11400000, guid: 6348ee6dc470c0548a674a5d75c71266, type: 2}
     - target: {fileID: 7446626289335737527, guid: 61cbf0f27e5bba242be193aba70a15f2, type: 3}
       propertyPath: m_Name
       value: Car
