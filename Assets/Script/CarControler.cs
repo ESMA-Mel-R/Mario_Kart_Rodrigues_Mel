@@ -13,7 +13,7 @@ public class CarControler : MonoBehaviour
 
     private float _speed, _accelerationLerpInterpolator, _rotationInput; 
     [SerializeField]
-    private float _speedMaxBasic = 3, _speedMaxTurbo = 10, _accelerationFactor, _rotationSpeed = 0.5f;
+    private float _speedMaxBasic = 10, _speedMaxTurbo = 20, _accelerationFactor, _rotationSpeed = 50;
     private bool _isAccelerating, _isTurbo;
     private float _terrainSpeedVariator;
 
