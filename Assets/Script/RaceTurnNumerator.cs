@@ -9,22 +9,26 @@ public class RaceTurnNumerator : MonoBehaviour
     [SerializeField] private Image _Finish;
     [SerializeField] private BoxCollider _BoxCollider;
 
-    private int _number;
+    private int _Checks;
+    private int _Lap;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        _number = 0;
+        _Lap = 31;
+        _LapNumber = GetComponent<Text>();
+        _Checks = 0;
         _BoxCollider = GetComponent<BoxCollider>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        _LapNumber.text = _Lap.ToString();
 
-
-        if ( _number == 32)
+        if ( _Checks == 32)
         {
-            
+            _Lap += 1;
+            _Checks = 0;
         }
     }
 
@@ -38,7 +42,7 @@ public class RaceTurnNumerator : MonoBehaviour
 
     IEnumerator Turn()
     {
-        _number += 1;
+        _Checks += 1;
         yield return new WaitForSeconds(5);
     }
 }
