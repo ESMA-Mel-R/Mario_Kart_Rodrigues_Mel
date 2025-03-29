@@ -14,14 +14,15 @@ public class RaceTurnNumerator : MonoBehaviour
     void Start()
     {
         _number = 0;
-        _Finish = gameObject.GetComponent<Image>();
         _BoxCollider = GetComponent<BoxCollider>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if ( _number == 4)
+
+
+        if ( _number == 32)
         {
             
         }
@@ -29,7 +30,7 @@ public class RaceTurnNumerator : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if ( other.tag == "Car")
+        if ( other.tag == "Checkpoint")
         {
             StartCoroutine(Turn());
         }
